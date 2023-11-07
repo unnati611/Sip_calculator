@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project21.css" />
+  </head>
+  <body>
+    <div class="main">
+     <div class="first"> 
+        <br>
+        <h2>SIP Calculator</h2>
+      <h4>Calculate returns on your SIP investments.</h4>
+      <p class="gray">ADVERTISEMENT</p></div>
+      <br />
+      <br />
+      <div class="flex1">
+        <div class="box1">
+          <label for="amount">Monthly Investment Amount (Rs.)</label><br />
+          <input
+            type="number"
+            placeholder="1000"
+            id="input1"
+            class="input"
+            name="number"
+          />
+        </div>
+        <div class="box1">
+          <label for="amount">Investment Period</label><br />
+          <input
+            type="number"
+            placeholder="years"
+            id="input2"
+            class="input2"
+            name="number"
+          />
+        </div>
+      </div>
+      <div class="flex2">
+        <div class="box1">
+          <label for="amount">Expected Annual Returns (%)</label><br />
+          <input
+            type="number"
+            placeholder="10"
+            id="input3"
+            class="input"
+            name="number"
+          />
+        </div>
+        <div class="box1">
+          <label for="amount">Adjust for Inflation ?</label><br />
+          <select name="inflation" class="input2" id="inflation">
+            <option value="no">no</option>
+            <option value="yes">yes</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn" id="btn" onclick="calculate()">Calculate</button>
+      <br><br>
+      <!-- <table>
+        <tr>
+          <th>Summary</th>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th>Expected Amount</th>
+          <td>RS.1000</td>
+        </tr>
+        <tr>
+          <th>Amount Invested</th>
+          <td>RS.1000</td>
+        </tr>
+        <tr>
+          <th>Wealth Gain</th>
+          <td>RS.1000</td>
+        </tr>
+      </table> -->
+      <div class="last">
+        <div class="div1"><p class="Summary">Summary</p></div>
+        <div class="div2"><p class="margin">Expected Amount</p><p class="rs" id="amountexpected">RS.</p></div>
+        <div class="div3"><p class="margin">Amount Invested</p><p class="rs2" id="amountinvested">RS.</p></div>
+        <div class="div4"><p class="margin">Wealth Ga in</p><p class="rs1" id="profit">RS.</p></div></div>
+      </div>
+    </div>
+    <script src="project21.js"></script>
+  </body>
+</html>
